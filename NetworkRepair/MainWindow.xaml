@@ -36,6 +36,14 @@
                     <!--关于-->
                     <Button x:Name="AboutButton" Style="{StaticResource Style.Button.Image.Small}" Visibility="Collapsed"
                             local:ControlHelper.Image="{StaticResource Image.About}"></Button>
+                    <!-- 最小化按钮 -->
+                    <Button Name="MinimizeButton" Margin="6 0 0 0" Style="{StaticResource Style.Button.Base}"
+                            Click="MinimizeButton_OnClick" 
+                            local:ControlHelper.Geometry="{StaticResource Window.Minimize}"
+                            local:ControlHelper.BackgroundHover="#0D000000"
+                            local:ControlHelper.BackgroundPressed="#14000000"
+                            local:ControlHelper.ForegroundHover="#808080"
+                            local:ControlHelper.ForegroundPressed="#808080"/>
                     <!-- 关闭按钮 -->
                     <Button Name="CloseButton" Style="{StaticResource Style.Button.Base}"
                         Click="CloseButton_OnClick" 

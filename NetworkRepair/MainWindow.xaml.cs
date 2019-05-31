@@ -44,7 +44,7 @@ namespace NetworkRepair
 
         private void CloseButton_OnClick(object sender, RoutedEventArgs e)
         {
-            Hide(sender, e);
+            this.Close();
         }
 
         private void Hide(object sender, EventArgs e)
@@ -63,9 +63,5 @@ namespace NetworkRepair
 
         #endregion
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show(this, $"当前IE版本号：{}")
-        }
     }
 }

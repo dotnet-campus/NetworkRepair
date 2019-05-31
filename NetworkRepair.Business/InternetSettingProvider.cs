@@ -88,8 +88,7 @@ namespace NetworkRepair.Business
         /// </summary>
         public void ResetIeByBat()
         {
-            //var internetSettings = @"Software\Microsoft\Internet Explorer";
-            //RegistryHelper.DeleteCurrentUserRegistryPath(internetSettings);
+            //ResetIeSetting.bat
         }
 
         /// <summary>
