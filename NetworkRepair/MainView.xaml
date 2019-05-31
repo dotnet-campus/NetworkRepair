@@ -10,7 +10,7 @@
              d:DesignHeight="450" d:DesignWidth="800" FontSize="14" x:Name="TheMainView">
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-        <converters:ReverseBooleanConverter x:Key="ReverseBooleanConverter"/>
+        <converters:BooleanReverseConverter x:Key="ReverseBooleanConverter"/>
     </UserControl.Resources>
     <Grid>
         <Grid IsEnabled="{Binding ElementName=TheMainView,Path=IsSearching,Converter={StaticResource ReverseBooleanConverter}}">

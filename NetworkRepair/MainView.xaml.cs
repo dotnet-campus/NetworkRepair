@@ -106,7 +106,7 @@ namespace NetworkRepair
         {
             IsSearching = true;
             string result = string.Empty;
-            await Task.Run(() => { result = SystemTimeHelper.UpdateTime(); });
+            await Task.Run(() => { result = SystemTimeHelper.UpdateSystemTime(); });
             Application.Current.Dispatcher.Invoke(() =>
             {
                 MessageBox.Show(Window.GetWindow(this), result, "提示");

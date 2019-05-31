@@ -8,17 +8,15 @@ using System.Windows.Data;
 
 namespace NetworkRepair.Views.Converters
 {
-    public class ReverseBooleanConverter : IValueConverter
+    public class BooleanReverseConverter : IValueConverter
     {
-
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value == null)
+            if (value is bool boolValue)
             {
-                return default(bool);
+                return !boolValue;
             }
-            var v = (bool)value;
-            return !v;
+            return default(bool);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

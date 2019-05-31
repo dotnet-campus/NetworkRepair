@@ -70,7 +70,7 @@
     <Compile Include="Views\CircleLoading.xaml.cs">
       <DependentUpon>CircleLoading.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Converters\ReverseBooleanConverter.cs" />
+    <Compile Include="Views\Converters\BooleanReverseConverter.cs" />
     <Compile Include="Views\Helper\ControlHelper.cs" />
     <Compile Include="Views\MoreOptionsView.xaml.cs">
       <DependentUpon>MoreOptionsView.xaml</DependentUpon>

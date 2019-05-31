@@ -15,7 +15,7 @@ namespace NetworkRepair
 
         public static ImageSource GetImageSource(DependencyObject element)
         {
-            return (ImageSource) element.GetValue(ImageSourceProperty);
+            return (ImageSource)element.GetValue(ImageSourceProperty);
         }
 
         public static readonly DependencyProperty GeometryProperty = DependencyProperty.RegisterAttached(
@@ -136,36 +136,6 @@ namespace NetworkRepair
             DependencyProperty.RegisterAttached("Image", typeof(ImageSource), typeof(ControlHelper),
                 new PropertyMetadata(null));
 
-        public static ImageSource GetImage2(DependencyObject element)
-        {
-            return (ImageSource)element.GetValue(Image2Property);
-        }
-
-        public static void SetImage2(DependencyObject element, ImageSource value)
-        {
-            element.SetValue(Image2Property, value);
-        }
-
-        /// <summary>
-        /// 附加属性，用于设定控件的附加图片2
-        /// </summary>
-        public static readonly DependencyProperty Image2Property =
-            DependencyProperty.RegisterAttached("Image2", typeof(ImageSource), typeof(ControlHelper),
-                new PropertyMetadata(null));
-
-
-        public static readonly DependencyProperty Image3Property = DependencyProperty.RegisterAttached(
-            "Image3", typeof(ImageSource), typeof(ControlHelper), new PropertyMetadata(default(ImageSource)));
-
-        public static void SetImage3(DependencyObject element, ImageSource value)
-        {
-            element.SetValue(Image3Property, value);
-        }
-
-        public static ImageSource GetImage3(DependencyObject element)
-        {
-            return (ImageSource)element.GetValue(Image3Property);
-        }
         #endregion
 
     }

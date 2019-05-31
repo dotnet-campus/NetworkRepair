@@ -45,7 +45,6 @@ namespace NetworkRepair.Business
         /// </summary>
         public async void SetInternetProtectLevelNormal()
         {
-            //使用SSL3.0和TLS1.0
             //"CurrentLevel"=dword:00011000
             //"MinLevel" = dword:00011000
             //"RecommendedLevel" = dword:00011000
